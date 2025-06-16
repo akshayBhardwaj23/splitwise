@@ -3,7 +3,7 @@ import { AuthContext } from "../Auth/context/AuthContext";
 import { useNavigate } from "react-router";
 
 const Header = () => {
-  const { logout } = useContext(AuthContext);
+  const { isAuthenticated, logout } = useContext(AuthContext);
   const navigate = useNavigate();
 
   const handleLogout = () => {
@@ -12,9 +12,11 @@ const Header = () => {
   };
 
   return (
-    <div className="h-20 bg-slate-950 text-white">
+    <div className="p-4 h-20 bg-slate-950 text-white flex justify-between">
       <div>Header</div>
-      <button onClick={handleLogout}>Logout</button>
+      <div>
+        {isAuthenticated && <button onClick={handleLogout}>Logout</button>}
+      </div>
     </div>
   );
 };
