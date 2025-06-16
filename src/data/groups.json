@@ -1,0 +1,37 @@
+[
+  {
+    "name": "group1",
+    "transactions": [
+      {
+        "user": "user1",
+        "amount": 500,
+        "status": "active"
+      },
+      {
+        "user": "user2",
+        "amount": 1000,
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "name": "group2",
+    "transactions": [
+      {
+        "user": "user4",
+        "amount": 5000,
+        "status": "active"
+      }
+    ]
+  },
+  {
+    "name": "group3",
+    "transactions": [
+      {
+        "user": "user1",
+        "amount": 500,
+        "status": "active"
+      }
+    ]
+  }
+]
